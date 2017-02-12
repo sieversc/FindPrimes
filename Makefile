@@ -1,5 +1,5 @@
-SRCS =  SampleTest.C Sample.C 
-EXEC = tester
+SRCS =  primes.C
+EXEC = primes
 
 OBJS = $(SRCS:.C=.o)
 
@@ -9,7 +9,7 @@ $(EXEC): $(OBJS)
 
 
 %.o : %.C
-	g++ -g -Wall -c $<
+	g++ -std=c++11 -g -Wall -c $<
 
 clean:
 	rm -f *.o *~ $(EXEC)
