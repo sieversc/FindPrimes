@@ -1,0 +1,1 @@
+//// Test program //#include "Sample.h"#include <iostream>using namespace std;const int MAX = 42;int main () {		return (MAX);}
